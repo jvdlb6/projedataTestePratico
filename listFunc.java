@@ -103,5 +103,14 @@ public class listFunc{
       System.out.printf("%s | %s | %,.2f | %s%n", funcionario.getNome(), funcionario.getDataNascimento(), funcionario.getSalario(), funcionario.getFuncao());
     }
     System.out.println();
+
+    // imprime a soma dos salários dos funcionários
+    BigDecimal somaSalarios = BigDecimal.ZERO;
+      for (Funcionario funcionario : funcionarios) {
+          somaSalarios = somaSalarios.add(funcionario.getSalario());
+      }
+    System.out.println("Somatório dos salários: R$ " + String.format("%.2f", somaSalarios));
+
+    System.out.println();
   }
 }
