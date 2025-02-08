@@ -17,7 +17,7 @@ public class Constants {
     };
 
     // Nome do funcionário
-    public static final String[] NOMES_FUNC = {"Maria", "João", "Caio", "Miguel", "Alice", "Heito", "Arthur", "Laura", "Heloísa", "Helena"};
+    public static final String[] NOMES_FUNC = {"Maria", "João", "Caio", "Miguel", "Alice", "Heitor", "Arthur", "Laura", "Heloísa", "Helena"};
 
    // Salário do funcionário
     public static final BigDecimal[] SALARIO_FUNC = {

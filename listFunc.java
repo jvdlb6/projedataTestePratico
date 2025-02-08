@@ -109,7 +109,7 @@ public class listFunc{
       for (Funcionario funcionario : funcionarios) {
           somaSalarios = somaSalarios.add(funcionario.getSalario());
       }
-    System.out.println("Somatório dos salários: R$ " + String.format("%.2f", somaSalarios));
+    System.out.println("Somatório dos salários: R$ " + String.format("%,.2f", somaSalarios));
 
     System.out.println();
   }
