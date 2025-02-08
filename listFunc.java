@@ -88,7 +88,11 @@ public class listFunc{
       }
     }
     // imprime o funcionário mais velho
-    System.out.println("Funcionário com a maior idade: " + funcionarioMaisVelho.getNome() + " e possui a idade de: " + maiorIdade);
+    if (funcionarioMaisVelho != null) {
+        System.out.println("Funcionário com a maior idade é " + funcionarioMaisVelho.getNome() + " e possui a idade de " + maiorIdade + " anos");
+    } else {
+        System.out.println("Erro ao encontrar o funcionário mais velho.");
+    }
 
     // imprime os func em ordem alfabética
     Collections.sort(funcionarios, (f1, f2) -> f1.getNome().compareTo(f2.getNome()));
