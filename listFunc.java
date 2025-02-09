@@ -110,6 +110,16 @@ public class listFunc{
           somaSalarios = somaSalarios.add(funcionario.getSalario());
       }
     System.out.println("Somatório dos salários: R$ " + String.format("%,.2f", somaSalarios));
+    System.out.println();
+
+    // Calcula a quantidade de salarios minimos que cada usuário ganha
+    BigDecimal salarioMinimo = new BigDecimal("1212.00");
+
+    for (Funcionario funcionario : funcionarios) {
+        BigDecimal salario = funcionario.getSalario();
+        int quantidadeSalarioMinimo = salario.divide(salarioMinimo, 0, BigDecimal.ROUND_DOWN).intValue();
+        System.out.println(funcionario.getNome() + ": " + quantidadeSalarioMinimo);
+    }
 
     System.out.println();
   }
